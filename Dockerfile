@@ -1,5 +1,5 @@
 FROM alpine:3.4
-COPY run.sh entrypoint.sh /opt/strongarm
+COPY run.sh entrypoint.sh /opt/strongarm/
 RUN ["/bin/sh", "/opt/strongarm/run.sh"]
 VOLUME /root/.ssh
 VOLUME /usr/local/src
