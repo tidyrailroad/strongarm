@@ -1,5 +1,5 @@
-FROM alpine:3.4
-COPY run.sh /opt/strongarm/
+FROM fedora:24
+COPY run.sh docker.repo /opt/docker
 RUN ["/bin/sh", "/opt/strongarm/run.sh"]
 VOLUME /root/.ssh
 VOLUME /usr/local/src
