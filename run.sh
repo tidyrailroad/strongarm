@@ -3,6 +3,6 @@
 apk update &&
     apk upgrade &&
     apk add docker &&
-    rm --recursive --force /opt/docker &&
+    rm -rf /opt/docker &&
     true
 
