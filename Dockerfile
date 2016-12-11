@@ -1,8 +1,8 @@
-FROM fedora:24
+FROM alpine:3.4
 MAINTAINER Emory Merryman emory.merryman@gmail.com
-COPY run.sh docker.repo entrypoint.sh /opt/docker/
+COPY run.sh /opt/docker/
 RUN ["/bin/sh", "/opt/docker/run.sh"]
-ENTRYPOINT ["/bin/sh", "/opt/docker/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh"]
 CMD []
 
 
